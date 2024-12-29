@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-#  Load dataset (pastikan Anda mengganti 'salaries.csv' dengan path file Anda)
+
 def load_data():
-    return pd.read_csv("all_data.csv")
+    return pd.read_csv("dashboard/all_data.csv")
 
 # Load data
 salaries_dataset_df = load_data()
@@ -18,26 +18,6 @@ with st.sidebar:
         - **Email:** evatheresiapardede@gmail.com
         - **Linkedin:**  https://www.linkedin.com/in/eva-theresia-pardede-2157b0246/
     """)
-    # selected_filter = st.selectbox(
-    # label="Pilih Filter Berdasarkan:",
-    # options=(
-    # 'Tahun Kerja', 
-    # 'Tingkat Pengalaman', 
-    # 'Jenis Pekerjaan', 
-    # 'Jabatan', 
-    # 'Gaji', 
-    # 'Mata Uang Gaji', 
-    # 'Gaji dalam USD', 
-    # 'Domisili Karyawan', 
-    # 'Rasio Kerja Remote', 
-    # 'Lokasi Perusahaan', 
-    # 'Ukuran Perusahaan'))
-
-# Header Content
-# st.header("Data Science Salaries :sparkles:")
-
-import streamlit as st
-
 # Menambahkan CSS untuk center align
 st.markdown(
     """
