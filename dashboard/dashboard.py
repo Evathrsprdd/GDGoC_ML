@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
 
 #  Load dataset (pastikan Anda mengganti 'salaries.csv' dengan path file Anda)
 def load_data():
